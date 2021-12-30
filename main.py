@@ -19,7 +19,7 @@ async def startup_event():
 
 
 @app.get("/player/{tag}", response_class=HTMLResponse)
-async def read_item(request: Request, tag: str):
+async def player_info(request: Request, tag: str):
     try:
         player = await client.get_player(tag)
     except:
