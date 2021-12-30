@@ -18,6 +18,9 @@ $ python -m venv .venv
 
 # 4. Activate virtual enviroment
 $ .venv/Scripts/Activate
+
+# 5. Install dependencies
+$ pip install -r requirements.txt
 ```
 
 As a next step, rename `.env.example` to `.env` and pass the required variables.
