@@ -1,0 +1,42 @@
+[tool.poetry]
+name = 'fastapi-coc.py'
+version = '0.1.0'
+description = 'A simple FastAPI app to demonstrate the use with coc.py.'
+authors = ['Priyam <50884372+r-priyam@users.noreply.github.com>']
+license = 'MIT'
+
+[tool.poetry.dependencies]
+python = '3.9.*'
+'coc.py' = '^2.0.0'
+fastapi = {extras = ['all'], version = '^0.75.2'}
+Jinja2 = '^3.1.1'
+
+[tool.poetry.dev-dependencies]
+black = '^22.3.0'
+isort = '^5.10.1'
+taskipy = '^1.10.1'
+
+[build-system]
+build-backend = 'poetry.core.masonry.api'
+requires = ['poetry-core>=1.0.0']
+
+[tool.black]
+line-length = 120
+skip-string-normalization = true
+
+[tool.isort]
+profile = 'black'
+combine_as_imports = true
+combine_star = true
+line_length = 120
+
+[tool.pyright]
+reportUnnecessaryTypeIgnoreComment = "warning"
+pythonVersion = "3.9.*"
+typeCheckingMode = "basic"
+strictParameterNoneValue = false
+exclude = [".venv", "**/__pycache__"]
+
+[tool.taskipy.tasks]
+start = ''
+format = 'isort . | black .'
