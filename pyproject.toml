@@ -10,11 +10,13 @@ python = '3.9.*'
 'coc.py' = '^2.0.0'
 fastapi = {extras = ['all'], version = '^0.75.2'}
 Jinja2 = '^3.1.1'
+typer = "^0.4.1"
 
 [tool.poetry.dev-dependencies]
 black = '^22.3.0'
 isort = '^5.10.1'
 taskipy = '^1.10.1'
+coloredlogs = "^15.0.1"
 
 [build-system]
 build-backend = 'poetry.core.masonry.api'
@@ -36,7 +38,9 @@ pythonVersion = "3.9.*"
 typeCheckingMode = "basic"
 strictParameterNoneValue = false
 exclude = [".venv", "**/__pycache__"]
+include = ["app", "app/clash", "app/core"]
 
 [tool.taskipy.tasks]
-start = ''
+dev = 'python setup.py --host 0.0.0.0 --debug'
 format = 'isort . | black .'
+prod = 'python setup.py'
