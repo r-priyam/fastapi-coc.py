@@ -1,36 +1,43 @@
-<h1 align="center">
-Quick example to show how to use <a href="https://github.com/tiangolo/fastapi" target="_blank">FastApi</a> with <a href="https://github.com/mathsman5133/coc.py" target="_blank">coc.py</a>
-</h1>
+<div align="center">
 
-### Getting Started
+## **A simple [FastAPI](https://github.com/tiangolo/fastapi) app to demonstrate the use with [coc.py](https://github.com/mathsman5133/coc.py)**
 
-Follow the below steps to setup for the intial phase.
+</div>
 
-```bash
-# 1. Clone the repo
-$ git clone https://github.com/r-priyam/fastapi-coc.py.git
+## Inroduction
 
-# 2. Change directory
-$ cd fastapi-coc.py
+This simple application uses the `coc.py` library to interact with `Clash of Clans` in game API and the `FastAPI` framework to server the data using `jinja2` templates.
 
-# 3. Create virtual enviroment
-$ python -m venv .venv
+## Features
 
-# 4. Activate virtual enviroment
-$ .venv/Scripts/Activate
+- 📄 Jinja2 templates
+- ✒️ Fully type-safe code (checked with [`Pyright`](https://github.com/microsoft/pyright)).
+- 🚀 It actually works!
 
-# 5. Install dependencies
-$ pip install -r requirements.txt
-```
+## Important Links
 
-As a next step, rename `.env.example` to `.env` and pass the required variables.
+- [FastAPI Documentation](https://fastapi.tiangolo.com/)
+- [coc.py Documentation](https://cocpy.readthedocs.io/en/latest/)
+- [Starlette's docs](https://www.starlette.io/templates/)
 
-- `COC_EMAIL`: Your email from `https://developer.clashofclans.com/`
-- `COC_PASSWORD`: Your password from `https://developer.clashofclans.com/`
-- `COC_KEY_NAME`: Name to create API key with.
+## Before you start
 
-All set now, turn the 💡 on by running - `uvicorn main:app --reload`
+Please make sure that you have these requirements ready:
 
-As a next step visit - `http://127.0.0.1:8000/player/2pp` and done. Change player tag to whatever you want to.
+- Python **3.9+**
+- Poetry, for dependency management. Follow the [installation instructions](https://python-poetry.org/docs/#installation) to install it.
+- GIT, for version control and also to clone this repo. Follow [installation instructions](https://git-scm.com/) to install it.
+- Nothing else but however basic knowledge of `Python` and `FastAPI`.
 
-To read more about templates use in FastApi please visit [FastApi docs](https://fastapi.tiangolo.com/advanced/templates/) or [Starlette's docs](https://www.starlette.io/templates/) on template.
+## Getting Started
+
+1. Clone the project using `git clone https://github.com/r-priyam/fastapi-coc.py.git`
+2. Run `poetry install` to install the dependencies.
+3. Rename `.env.example` to `.env` and fill in the required values.
+    - `COC_EMAIL`: Your email from `https://developer.clashofclans.com/`
+    - `COC_PASSWORD`: Your password from `https://developer.clashofclans.com/`
+    - `COC_KEY_NAME`: Name to create API key with.
+
+All set now, turn the 💡 on by running - `poetry run task dev`. Once application started, visit - `http://127.0.0.1:8000/player/2pp` in your browser and done. Change player tag to whatever you want to and it will display that player information.
+
+If you have any questions or suggestions, please feel free to open an issue [here](https://github.com/r-priyam/fastapi-coc.py/issues/new).
