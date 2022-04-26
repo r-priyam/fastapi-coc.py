@@ -11,13 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       POETRY_VIRTUALENVS_CREATE: false
-      POETRY_CACHE_DIR: ${{ github.workspace }}/.cache/py-user-base
-      PYTHONUSERBASE: ${{ github.workspace }}/.cache/py-user-base
     if: "!contains(needs.pre_ci.outputs.commit_message, '[skip ci]')"
     steps:
-      - name: Add custom PYTHONUSERBASE to PATH
-        run: echo '${{ env.PYTHONUSERBASE }}/bin/' >> $GITHUB_PATH
-
       - name: Checkout Project
         uses: actions/checkout@v2
 
@@ -27,17 +22,7 @@ jobs:
         with:
           python-version: '3.9'
       
-      - name: Python Dependency Caching
-        uses: actions/cache@v2
-        id: python_cache
-        with:
-          path: ${{ env.PYTHONUSERBASE }}
-          key: "python-0-${{ runner.os }}-${{ env.PYTHONUSERBASE }}-\
-          ${{ steps.python.outputs.python-version }}-\
-          ${{ hashFiles('./pyproject.toml', './poetry.lock') }}"
-      
       - name: Install dependencies using poetry
-        if: steps.python_cache.outputs.cache-hit != 'true'
         run: |
           pip install poetry
           poetry install
