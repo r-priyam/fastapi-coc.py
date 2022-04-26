@@ -4,7 +4,6 @@ import coc
 
 from config import config
 
-
 client = coc.Client(key_names=config.COC_KEY_NAME)
 
 

@@ -12,4 +12,5 @@ class Config(BaseSettings):
         env_file = ".env"
         case_sensitive = True
 
+
 config = Config()

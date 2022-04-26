@@ -2,11 +2,9 @@ from __future__ import annotations
 
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
-
 from fastapi.templating import Jinja2Templates
 
-from clash import setup_coc, client
-
+from clash import client, setup_coc
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
