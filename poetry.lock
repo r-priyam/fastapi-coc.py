@@ -341,14 +341,14 @@ colorama = {version = "*", markers = "platform_system == \"Windows\""}
 
 [[package]]
 name = "coc-py"
-version = "2.3.1"
+version = "2.4.0"
 description = "A python wrapper for the Clash of Clans API"
 category = "main"
 optional = false
 python-versions = ">=3.7.3"
 files = [
-    {file = "coc.py-2.3.1-py3-none-any.whl", hash = "sha256:ba7956c55ae99958f6d30c36bc6efff473dd2c0c896ebce51e7fc939597ed41b"},
-    {file = "coc.py-2.3.1.tar.gz", hash = "sha256:c1218d415f62f9d699c755ead248fbe3f2aee103d5bb47d6ef4d36400402fed3"},
+    {file = "coc.py-2.4.0-py3-none-any.whl", hash = "sha256:0172d9156bd8689eb6837ec2d17cf80425de78ae4d407a4a47156941d6669212"},
+    {file = "coc.py-2.4.0.tar.gz", hash = "sha256:179a8debbe5ad9bcbb8964bbc8e2cea66767f2ec3ab36b4039fe5897adc96e88"},
 ]
 
 [package.dependencies]
@@ -919,18 +919,18 @@ files = [
 
 [[package]]
 name = "platformdirs"
-version = "3.5.0"
+version = "3.5.1"
 description = "A small Python package for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "platformdirs-3.5.0-py3-none-any.whl", hash = "sha256:47692bc24c1958e8b0f13dd727307cff1db103fca36399f457da8e05f222fdc4"},
-    {file = "platformdirs-3.5.0.tar.gz", hash = "sha256:7954a68d0ba23558d753f73437c55f89027cf8f5108c19844d4b82e5af396335"},
+    {file = "platformdirs-3.5.1-py3-none-any.whl", hash = "sha256:e2378146f1964972c03c085bb5662ae80b2b8c06226c54b2ff4aa9483e8a13a5"},
+    {file = "platformdirs-3.5.1.tar.gz", hash = "sha256:412dae91f52a6f84830f39a8078cecd0e866cb72294a5c66808e74d5e88d251f"},
 ]
 
 [package.extras]
-docs = ["furo (>=2023.3.27)", "proselint (>=0.13)", "sphinx (>=6.1.3)", "sphinx-autodoc-typehints (>=1.23,!=1.23.4)"]
+docs = ["furo (>=2023.3.27)", "proselint (>=0.13)", "sphinx (>=6.2.1)", "sphinx-autodoc-typehints (>=1.23,!=1.23.4)"]
 test = ["appdirs (==1.4.4)", "covdefaults (>=2.3)", "pytest (>=7.3.1)", "pytest-cov (>=4)", "pytest-mock (>=3.10)"]
 
 [[package]]
