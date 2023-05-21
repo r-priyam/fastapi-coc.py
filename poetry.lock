@@ -341,14 +341,14 @@ colorama = {version = "*", markers = "platform_system == \"Windows\""}
 
 [[package]]
 name = "coc-py"
-version = "2.4.0"
+version = "2.4.1"
 description = "A python wrapper for the Clash of Clans API"
 category = "main"
 optional = false
 python-versions = ">=3.7.3"
 files = [
-    {file = "coc.py-2.4.0-py3-none-any.whl", hash = "sha256:0172d9156bd8689eb6837ec2d17cf80425de78ae4d407a4a47156941d6669212"},
-    {file = "coc.py-2.4.0.tar.gz", hash = "sha256:179a8debbe5ad9bcbb8964bbc8e2cea66767f2ec3ab36b4039fe5897adc96e88"},
+    {file = "coc.py-2.4.1-py3-none-any.whl", hash = "sha256:353e73930d7accc44abcc912ff784a5e5e7806acde825f8fa5a9001c885d7b78"},
+    {file = "coc.py-2.4.1.tar.gz", hash = "sha256:593e3ff842068dd28aea455287c832e205b34a73b2159e0d43b5ad4715e2761e"},
 ]
 
 [package.dependencies]
@@ -1171,14 +1171,14 @@ full = ["itsdangerous", "jinja2", "python-multipart", "pyyaml", "requests"]
 
 [[package]]
 name = "taskipy"
-version = "1.10.4"
+version = "1.11.0"
 description = "tasks runner for python projects"
 category = "dev"
 optional = false
 python-versions = ">=3.6,<4.0"
 files = [
-    {file = "taskipy-1.10.4-py3-none-any.whl", hash = "sha256:b96245d7f2956d36821435acaa822143ef6d2ff6cfecc48cf0a48c4b95456c14"},
-    {file = "taskipy-1.10.4.tar.gz", hash = "sha256:0006429f708f530fc7add28ca51fd41f6c6e1fbe86763ff05125e1af3e8bdc7e"},
+    {file = "taskipy-1.11.0-py3-none-any.whl", hash = "sha256:4e40cd41747a54bc8a9b3c21057c25cac645309c2d8ac897bdc1e7235e9c900e"},
+    {file = "taskipy-1.11.0.tar.gz", hash = "sha256:521e8b3b65dc1ff9bb036cae989dbe5aec1626a61cf4744e5c0d0d2450c7fcb4"},
 ]
 
 [package.dependencies]
